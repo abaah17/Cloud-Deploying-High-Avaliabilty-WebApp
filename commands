@@ -1,0 +1,9 @@
+./create.sh final project.yml network-parameters.json
+./delete.sh final 
+./update.sh final project.yml network-parameters.json
+sudo apt-get update -y
+sudo apt-get install unzip awscli -y
+sudo apt-get install apache2 -y
+sudo systemctl start apache2.service
+us-west-2
+aws s3 cp -f s3://baahlogy233/index.html .
